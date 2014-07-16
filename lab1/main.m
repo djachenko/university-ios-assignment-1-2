@@ -2,6 +2,7 @@
 #import "Cathedra.h"
 #import "Group.h"
 #import "ZavKaf.h"
+#import "University.h"
 
 int main(int argc, const char * argv[])
 {
@@ -27,7 +28,7 @@ int main(int argc, const char * argv[])
 		{
 			Student * student = [[Student alloc] init];
 
-			student.mark = arc4random_uniform(2) + 2;
+			student.mark = arc4random_uniform(4) + 2;
 			student.group = [SI.studentGroups.subordinates objectAtIndex:arc4random_uniform(groups.count)];
 			[student.group.members addSubordinate:student];
 
@@ -36,6 +37,12 @@ int main(int argc, const char * argv[])
 
 		[SI.professors addSubordinate:teacher];
 	}
+
+	University *university = [University instance];
+
+	[university.cathedras addSubordinate:SI];
+
+	NSLog(@"%f", university.avgMark);
 
 	return 0;
 }

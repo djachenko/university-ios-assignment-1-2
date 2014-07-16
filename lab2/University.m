@@ -6,6 +6,15 @@
 
 static University *_instance = nil;
 
+- (instancetype)init
+{
+	self = [super init];
+
+	_cathedras = [[Subordinator alloc] init];
+
+	return self;
+}
+
 - (float)avgMark
 {
 	float sum = 0;

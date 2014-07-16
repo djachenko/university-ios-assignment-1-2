@@ -9,8 +9,12 @@
 @synthesize internalSubordinates = _internalSubordinates;
 @dynamic subordinates;
 
-- (id)init
+- (instancetype)init
 {
+	self = [super init];
+
+	_internalSubordinates = [[NSMutableArray alloc] init];
+
 	return self;
 }
 
