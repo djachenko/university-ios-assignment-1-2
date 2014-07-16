@@ -15,4 +15,10 @@
 									  '\n'];
 }
 
+- (float)avgMark
+{
+	return self.mark;
+}
+
+
 @end

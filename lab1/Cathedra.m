@@ -1,4 +1,5 @@
 #import "Cathedra.h"
+#import "Group.h"
 
 
 @implementation Cathedra
@@ -23,5 +24,18 @@
 					 @"Groups:\n",
 					 _studentGroups.description];
 }
+
+- (float)avgMark
+{
+	float sum = 0;
+
+	for (Group *group in self.studentGroups.subordinates)
+	{
+		sum += group.avgMark;
+	}
+
+	return sum;
+}
+
 
 @end

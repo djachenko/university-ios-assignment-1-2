@@ -2,8 +2,9 @@
 
 
 #import "Subordinator.h"
+#import "AvgMarkable.h"
 
-@interface Cathedra : NSObject
+@interface Cathedra : NSObject<AvgMarkable>
 
 @property (nonatomic, strong, readonly) Subordinator *professors;
 

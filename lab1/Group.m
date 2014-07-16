@@ -1,5 +1,6 @@
 #import "Group.h"
 #import "Subordinator.h"
+#import "Student.h"
 
 
 @implementation Group
@@ -19,6 +20,18 @@
 					  _number,
 					  @"\nStudents:\n",
 					  _members.description];
+}
+
+- (float)avgMark
+{
+	float sum = 0;
+
+	for (Student *student in self.members.subordinates)
+	{
+		sum += student.avgMark;
+	}
+
+	return sum;
 }
 
 @end
