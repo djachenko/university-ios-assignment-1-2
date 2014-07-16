@@ -37,27 +37,6 @@ int main(int argc, const char * argv[])
 		[SI.professors addSubordinate:teacher];
 	}
 
-	ZavKaf *zavKaf = [[ZavKaf alloc] init];
-
-	zavKaf.cathedra = SI;
-
-	for (int i = 0; i < SI.studentGroups.subordinates.count; ++i)
-	{
-		Group *group = [SI.studentGroups.subordinates objectAtIndex: i];
-
-		for (int j = 0; j < group.members.subordinates.count; ++j)
-		{
-			if (0 == arc4random_uniform(20))
-			{
-				[zavKaf.students addSubordinate:[group.members.subordinates objectAtIndex:j]];
-			}
-		}
-	}
-
-	SI.name = @"SI";
-
-	NSLog(zavKaf.description);
-
 	return 0;
 }
 
