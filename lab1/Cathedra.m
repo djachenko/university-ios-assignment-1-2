@@ -3,8 +3,10 @@
 
 @implementation Cathedra
 
-- (id)init
+- (instancetype)init
 {
+	self = [super init];
+
 	_professors = [[Subordinator alloc] init];
 	_studentGroups = [[Subordinator alloc] init];
 

@@ -5,9 +5,9 @@
 
 @interface Cathedra : NSObject
 
-@property (readonly) Subordinator *professors;
+@property (nonatomic, strong, readonly) Subordinator *professors;
 
-@property (readonly) Subordinator *studentGroups;
-@property NSString *name;
+@property (nonatomic, strong, readonly) Subordinator *studentGroups;
+@property (nonatomic, copy) NSString *name;
 
 @end

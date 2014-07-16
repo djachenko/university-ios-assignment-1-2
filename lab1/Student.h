@@ -6,7 +6,7 @@
 
 @interface Student : Human
 
-@property int mark;
-@property Group *group;
+@property (nonatomic) int mark;
+@property (nonatomic, strong) Group *group;
 
 @end

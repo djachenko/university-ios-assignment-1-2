@@ -1,11 +1,3 @@
-//
-//  Teacher.m
-//  lab1
-//
-//  Created by Admin on 15/07/14.
-//  Copyright (c) 2014 Horns and hooves. All rights reserved.
-//
-
 #import "Teacher.h"
 
 @implementation Teacher
@@ -23,7 +15,7 @@
 
 - (NSString *)description
 {
-	return [NSString stringWithFormat: @"%@%@%@%@%@%@",
+	return [NSString stringWithFormat: @"%@%@%@%d%@%@",
 					 @"Teacher:\n",
 					 super.description,
 					 @"degree: ",

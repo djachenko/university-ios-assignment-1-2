@@ -6,6 +6,6 @@
 
 @interface ZavKaf : Teacher
 
-@property Cathedra *cathedra;
+@property (nonatomic, strong) Cathedra *cathedra;
 
 @end

@@ -1,15 +1,9 @@
-//
-// Created by Admin on 15/07/14.
-// Copyright (c) 2014 Horns and hooves. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
-
-@class Subordinator;
-
+#import "Subordinator.h"
 
 @interface Group : NSObject
-@property (readonly) Subordinator *members;
-@property int number;
-- (id)initWithNumber:(int)number;
+@property (nonatomic, readonly) Subordinator *members;
+@property (nonatomic, readonly) int number;
+
+- (instancetype)initWithNumber:(int)number;
 @end

@@ -2,8 +2,8 @@
 
 @interface Human : NSObject
 
-@property NSString *name;
-@property NSDate *birthDate;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSDate *birthDate;
 
 - (int)age;
 
