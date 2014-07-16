@@ -34,7 +34,7 @@
 		sum += group.avgMark;
 	}
 
-	return sum;
+	return sum / self.studentGroups.subordinates.count;
 }
 
 

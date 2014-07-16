@@ -31,7 +31,7 @@
 		sum += student.avgMark;
 	}
 
-	return sum;
+	return sum / self.members.subordinates.count;
 }
 
 @end
