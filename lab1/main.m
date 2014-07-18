@@ -21,7 +21,7 @@ int main(int argc, const char * argv[])
 	{
 		Teacher *teacher = [[Teacher alloc] init];
 
-		teacher.degree = docent;
+		teacher.degree = teacherDegreeDocent;
 
 		for (int j = 0; j < 10; j++)
 		{

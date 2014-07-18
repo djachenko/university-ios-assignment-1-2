@@ -13,7 +13,15 @@ typedef NS_ENUM(int, Degree)
 	professor
 };
 
+typedef NS_ENUM(NSInteger, TeacherDegree) {
+	teacherDegreeUnknown,
+	teacherDegreeAssistant,
+	teacherDegreeTeacher,
+	teacherDegreeDocent,
+	teacherDegreeProfessor
+};
+
 @property (nonatomic, strong, readonly) Subordinator *students;
-@property (nonatomic) Degree degree;
+@property (nonatomic) TeacherDegree degree;
 
 @end
