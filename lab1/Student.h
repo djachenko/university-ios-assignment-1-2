@@ -8,6 +8,6 @@
 @interface Student : Human<AvgMarkable>
 
 @property (nonatomic) int mark;
-@property (nonatomic, strong) Group *group;
+@property (nonatomic, weak) Group *group;
 
 @end

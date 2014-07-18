@@ -1,5 +1,4 @@
 #import "Group.h"
-#import "Subordinator.h"
 #import "Student.h"
 
 
@@ -7,8 +6,13 @@
 
 - (id)initWithNumber:(int)number
 {
-	_number = number;
-	_members = [[Subordinator alloc] init];
+	self = [self init];
+
+	if (self)
+	{
+		_number = number;
+		_members = [[Subordinator alloc] init];
+	}
 
 	return self;
 }

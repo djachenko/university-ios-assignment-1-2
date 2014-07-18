@@ -1,7 +1,6 @@
 #import "Teacher.h"
 #import "Cathedra.h"
 #import "Group.h"
-#import "ZavKaf.h"
 #import "University.h"
 
 int main(int argc, const char * argv[])

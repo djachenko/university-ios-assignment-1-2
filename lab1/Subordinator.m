@@ -13,7 +13,10 @@
 {
 	self = [super init];
 
-	_internalSubordinates = [[NSMutableArray alloc] init];
+	if (self)
+	{
+		_internalSubordinates = [[NSMutableArray alloc] init];
+	}
 
 	return self;
 }

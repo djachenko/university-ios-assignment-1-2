@@ -8,7 +8,10 @@
 {
 	self = [super init];
 
-	_students = [[Subordinator alloc] init];
+	if (self)
+	{
+		_students = [[Subordinator alloc] init];
+	}
 
 	return self;
 }

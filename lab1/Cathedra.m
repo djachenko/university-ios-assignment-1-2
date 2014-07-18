@@ -8,8 +8,11 @@
 {
 	self = [super init];
 
-	_professors = [[Subordinator alloc] init];
-	_studentGroups = [[Subordinator alloc] init];
+	if (self)
+	{
+		_professors = [[Subordinator alloc] init];
+		_studentGroups = [[Subordinator alloc] init];
+	}
 
 	return self;
 }

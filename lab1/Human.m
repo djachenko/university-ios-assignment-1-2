@@ -4,8 +4,13 @@
 
 - (id)init
 {
-	_name = @"John";
-	_birthDate = [NSDate dateWithTimeIntervalSince1970:arc4random_uniform(25) * 365 * 24 * 60 * 60];
+	self = [super init];
+
+	if (self)
+	{
+		_name = @"John";
+		_birthDate = [NSDate dateWithTimeIntervalSince1970:arc4random_uniform(25) * 365 * 24 * 60 * 60];
+	}
 
 	return self;
 }
