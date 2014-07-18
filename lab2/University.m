@@ -24,7 +24,7 @@ static University *_instance = nil;
 		sum += cathedra.avgMark;
 	}
 
-	return sum;
+	return sum / self.cathedras.subordinates.count;
 }
 
 + (University *)instance
